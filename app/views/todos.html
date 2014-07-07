@@ -1,0 +1,12 @@
+<form ngsubmit="addToDo()">
+  <input type="text" value="name" ng-model="todos.name"/>
+  <input type= "text" value="location" ng-model="todos.location"/>
+  <input type= "text" value="time" ng-model="todos.time"/>
+  <input type="submit" value="Add ToDo"/>
+</form>
+<div>
+ <span>{{todo.name}}</span>
+ <span>{{todo.location}}</span>
+ <span>{{todo.time}}</span>
+ <span>{{todos}}</span>
+</div>

@@ -1,13 +1,5 @@
 'use strict';
 
-/**
- * @ngdoc overview
- * @name streakApp
- * @description
- * # streakApp
- *
- * Main module of the application.
- */
 angular
   .module('streakApp', [
     'ngAnimate',
@@ -20,12 +12,8 @@ angular
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
+        templateUrl: 'views/todos.html',
+        controller: 'ToDosCtrl'
       })
       .otherwise({
         redirectTo: '/'
